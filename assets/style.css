@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sticky-container {
+    max-width: 90%;
+    height: 100%;
+    background-color: grey;
+    margin: 8px auto;
+    position: relative;
+    padding: 2px;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    padding: 4px 0;
+    color: #000;
+    background-color: rgba(250, 235, 235, 0.2);
+    width: 80%;
+    border-radius: 12px;
+}
+
+.sticky-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-board {
+    width: 212px;
+    height: 228px;
+    margin: 18px;
+    padding: 12px;
+    border: 2px solid white;
+    box-shadow: 5px 5px 7px rgba(33, 33, 33, .7);
+    transform: rotate(-1deg);
+    transition: transform .5s;
+    position: relative;
+}
+
+.sticky-board img:nth-child(1) {
+    position: absolute;
+    top: -16px;
+    left: 45%;
+    width: 28px;
+    height: 28px;
+}
+
+.sticky-board img:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22px;
+    height: 22px;
+}
+
+.sticky-board:nth-child(1) {
+    background-color: orangered;
+    transform: rotate(-4deg);
+}
+
+.sticky-board:nth-child(2) {
+    background-color: darkturquoise;
+    transform: rotate(4deg);
+}
+
+.sticky-board:nth-child(3) {
+    background-color: cornflowerblue;
+    transform: rotate(-4deg);
+}
+
+.sticky-board:nth-child(4) {
+    background-color: orangered;
+}
+
+.sticky-board:nth-child(5) {
+    background-color: blueviolet;
+    transform: rotate(-3deg);
+}
+
+.sticky-board:nth-child(6) {
+    background-color: coral;
+    transform: rotate(3deg);
+}
+
+.sticky-board:nth-child(7) {
+    background-color: coral;
+    transform: rotate(-4deg);
+}
+
+.sticky-board:nth-child(8) {
+    background-color: salmon;
+    transform: rotate(4deg);
+}
+
+.sticky-board p:nth-child(1) {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.sticky-board a {
+    font-style: italic;
+    text-align: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 4px;
+    text-decoration: none;
+    color: #000;
+}
+
+.sticky-board a:hover {
+    text-decoration: underline;
+}
+
+.sticky-board:hover,
+.sticky-board:focus {
+    transform: scale(1.09);
+    box-shadow: 10px 10px 7px rgba(0, 0, 0, .7);
+    z-index: 5;
+}
